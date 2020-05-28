@@ -17,8 +17,8 @@ department_no = input('enter department number')
 salary = input('enter salary')
 
 
-query = "INSERT INTO employees(name, address,department_number, salary) values(" + \
-    name+","+address+","+department_no+","+salary+");"
+query = "INSERT INTO employees(name, address,department_number, salary) values('" + \
+    name+"','"+address+"','"+department_no+"','"+salary+"');"
 cursor.execute(query)
 # query = "INSERT INTO employees(name, address,department_number, salary) values(%s,%s,%s,%s);"
 # cursor.execute(query, (name, address, department_no, salary))
